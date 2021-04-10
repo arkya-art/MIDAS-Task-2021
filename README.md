@@ -121,7 +121,7 @@ Also the [Resarch Paper](https://www.mdpi.com/1424-8220/20/12/3344) represents t
 ### Model Performance
 The model has 84.91% accuracy on the training dataset and about 54.17% accuracy in validation dataset
 
-This shows the [Result]()
+This shows the ![Result](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/model%20performance%202.1.jpg)
 ### Conclusion
 There exist large variance error due to overfitting of the dataset, I have tried to apply many possible techniques but could not further improve the performance of the model 
 
