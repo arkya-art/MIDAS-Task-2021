@@ -1,7 +1,7 @@
 # MIDAS IIIT-D 2021 Task 2 
 
 
-## Problem
+# Problem
 
 * Use this [dataset](https://www.dropbox.com/s/pan6mutc5xj5kj0/trainPart1.zip) to train a CNN. Use no other data source or pretrained networks, and explain your design choices during preprocessing, model building and training. Also, cite the sources you used to borrow techniques. A test set will be provided later to judge the performance of your classifier. Please save your model checkpoints.
 
@@ -88,6 +88,25 @@ Contains the checkpoint of the model in main.py [checkpoint](https://github.com/
 
 * experiment log
 This contains the detailed information about the processes adopted while solving the given tasks. [Experiment-Log](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/experiment%20log.ipynb)
+
+# Model Task 2.1
+
+## Proposed Work
+In the proposed work we followed a step wise procedure to design our model,the first step involves the data preprocessing step.
+
+### Data Preprocessing
+Dataset is taken and firstly passed through a data-generator function which performs series of steps. Firstly the input grayscale image is normalized, the normalization of image data is a key process which 
+that ensures that each input parameter (pixel, in this case) has a same data distribution, this also helps in faster convergence of the loss function, as suggested within this [article](https://becominghuman.ai/image-data-pre-processing-for-neural-networks-498289068258)
+This step is followed by Data augmentation techniques, this step helps to reduce the variance problem. There are many ways by which you perform the [data augmentation](https://nanonets.com/blog/data-augmentation-how-to-use-deep-learning-when-you-have-limited-data-part-2/) technique, some of the effective ways are image rotation, zooming of image, width and height shift.
+This were the common techniques which were common in many research paper related to image recognition technique.  
+
+[1](http://users.cecs.anu.edu.au/~Tom.Gedeon/conf/ABCs2018/paper/ABCs2018_paper_175.pdf) In this paper, different classifier algorithms are used in this model to check the performance of the model.
+Consideration is made for various hyperparameters, and the convolutional neural network by taking account of the image
+length and width to make a stride. The network also comprises pooling layers, and max-pooling is applied to the network.
+
+[2](https://arxiv.org/pdf/1811.08278.pdf) In this paper the author comapers the 4 different types of neural network on the very famous MNIST dataset. They used a CNN based architecture alongwith its modifies version, Deep residual network, the dense convolutional network and the 
+Capsule Network. It was showed that CapsNet perform best across datasets.It was found that CapsNet requires only a small amount of data to achieve excellent performance.
+
 
 
  
