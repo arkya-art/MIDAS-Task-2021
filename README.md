@@ -129,16 +129,35 @@ There exist large variance error due to overfitting of the dataset, I have tried
 
 In this we are comparing both the models formed in Task 2.2 
 
-### Pretrained Model on MNIST Dataset
+### Pretrained Model and Randomly Initialized model on MNIST Dataset
 
 This model was trained for 10 epochs in which the train data has 938 steps per epoch and the validation dataset has 157 steps per epoch.
 We obtained a training accuracy of 99.68% after 10 epochs while on validation dataset I obtained an accuracy of 99.3%. I can conclude from 
 this data that the pretrained model performs very well in terms of bias i.e. fitting the training data and in terms of variance i.e not overfitting
 the training dataset as resulted from a very good accuracy in validation dataset.
 
-Whereas in the randomly initialized model
+Whereas in the randomly initialized model, it was trained for 10 epochs in which the train data has 938 steps per epoch and the validation dataset has 157 steps per epoch which is same as earlier model.
+We obtained a training accuracy of 99.57% after 10 epochs while on validation dataset I obtained an accuracy of 98.87%.
+
+On comparing both the models in this aspect the pretrained model performed pretty well.
+
+[pretrained model accuracy]()
+
+[Randomly initialized model accuracy]()
+
+On Comparing the epoch loss and accuracy for both the model, the randomly initialized model saturates earlier as compared to the pretrained model on 0-9 dataset. The graphs can be shown below:-
+
+[pretrained model]()
+
+[Randomly initialized model]()
+
+On comparing the confusion matrix for both the models it can be found that there are 113 misclassified images in randomly initialized model and most of the misclassification lies in the upper right diagonal
+whereas in the pretrained model there exists 70 misclassified images and the most of the misclassification lies in the lower left diagonal. It can be concluded that for randomly initialized model it is misclassifying
+for the larger number mostly (i.e > 5) and for pretrained model it is misclassifying the lower end numbers
  
- 
+[pretrained model confusion matrix]()
+
+[[Randomly initialized model confusion matrix]() 
  
 
 
