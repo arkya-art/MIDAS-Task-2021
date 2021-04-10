@@ -121,7 +121,7 @@ Also the [Resarch Paper](https://www.mdpi.com/1424-8220/20/12/3344) represents t
 ### Model Performance
 The model has 84.91% accuracy on the training dataset and about 54.17% accuracy in validation dataset
 
-This shows the ![Result](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/model%20performance%202.1.jpg)
+![Result](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/model%20performance%202.1.jpg)
 ### Conclusion
 There exist large variance error due to overfitting of the dataset, I have tried to apply many possible techniques but could not further improve the performance of the model 
 
@@ -141,23 +141,23 @@ We obtained a training accuracy of 99.57% after 10 epochs while on validation da
 
 On comparing both the models in this aspect the pretrained model performed pretty well.
 
-[pretrained model accuracy]()
+![pretrained model accuracy](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/pretrained%20model%20trained%20on%20mnist.jpg)
 
-[Randomly initialized model accuracy]()
+![Randomly initialized model accuracy](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/random-initialization-model-train-on-mnist.jpg)
 
 On Comparing the epoch loss and accuracy for both the model, the randomly initialized model saturates earlier as compared to the pretrained model on 0-9 dataset. The graphs can be shown below:-
 
-[pretrained model]()
+![pretrained model](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/pretrained%20model%20trained%20on%20mnist1.jpg)
 
-[Randomly initialized model]()
+![Randomly initialized model](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/random-initialization-model-train-on-mnist1.jpg)
 
 On comparing the confusion matrix for both the models it can be found that there are 113 misclassified images in randomly initialized model and most of the misclassification lies in the upper right diagonal
 whereas in the pretrained model there exists 70 misclassified images and the most of the misclassification lies in the lower left diagonal. It can be concluded that for randomly initialized model it is misclassifying
 for the larger number mostly (i.e > 5) and for pretrained model it is misclassifying the lower end numbers
  
-[pretrained model confusion matrix]()
+![pretrained model confusion matrix](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/pretrained%20model%20trained%20on%20mnist2.jpg)
 
-[Randomly initialized model confusion matrix]() 
+![Randomly initialized model confusion matrix](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/random-initialization-model-train-on-mnist2.jpg) 
  
 # Model Task 2.3
 
@@ -172,6 +172,6 @@ the training dataset as resulted from a very good accuracy in validation dataset
 According to the earlier model (randomly initialized model) which was trained and validated on MNIST test data, Obtained a training accuracy of 99.57% after 10 epochs while on validation dataset it obtained an accuracy of 98.87%
 So the pretrained model performs better as compared to the pre-trained dataset
 
-[pretrained model]()
+![pretrained model](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/task2.3main.py.jpg)
 
-[pretrained model confusion matrix]()
+![pretrained model confusion matrix](https://github.com/arkya-art/MIDAS-Task-2021/blob/master/Images/task2.3main.py-confusionmatrix.jpg)
