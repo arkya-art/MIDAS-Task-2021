@@ -78,7 +78,7 @@ print(model.summary())
 
 # save_callback For saving the checkpoints of the model
 save_callback = keras.callbacks.ModelCheckpoint(
-    "C:/Users/Asus/Desktop/machine learning/MIDAS IIIT-D challenge/Task 2.1/checkpoint/", save_weights_only=True, monitor="train_acc", save_best_only=False,
+    "C:/Users/Asus/Desktop/machine learning/MIDAS IIIT-D challenge/Task 2.1/checkpoint-modified/", save_weights_only=False, monitor="train_acc", save_best_only=True,
 )
 
 
@@ -102,7 +102,7 @@ model.fit(
 
 
 
-model.load_weights("C:/Users/Asus/Desktop/machine learning/MIDAS IIIT-D challenge/Task 2.1/checkpoint/")
+model.load_weights("C:/Users/Asus/Desktop/machine learning/MIDAS IIIT-D challenge/Task 2.1/checkpoint-modified/")
 
 loss, acc = model.evaluate(Val_generator, verbose=2)
 print("Trained model, accuracy: {:5.2f}%".format(100 * acc))
